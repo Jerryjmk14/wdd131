@@ -1,0 +1,33 @@
+/* Larger View ***************/
+@media only screen and (min-width: 43em) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .nav-title{
+        display: block;
+    }
+	.navigation {
+		display: flex;  
+	}
+	.navigation a {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+        text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    main h1 {
+        grid-column: span 3;
+    }
+    figure img {
+        width: 100%;
+    }
+
+}
