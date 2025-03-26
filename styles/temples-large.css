@@ -23,7 +23,7 @@
     main {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    main h1 {
+    main h2 {
         grid-column: span 3;
     }
     figure img {
