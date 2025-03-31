@@ -1,0 +1,78 @@
+:root{
+    --primary-color: teal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Mobile View(small) */
+header,footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+section {
+    width: 250px;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+.data span, .weather span {
+    font-weight: 700;
+}
+.weather img {
+    width: 100px;
+    height: auto;
+}
+header h1, main, footer {
+    text-align: center;
+}
+
+
+/* enable responsive behavior for the image */
+picture img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* Media query for larger screen */
+  @media screen and (min-width: 740px){
+    .weather h2::after{
+        content: " ⛅";
+        color: goldenrod;
+    }
+
+    section {
+        padding-top: 3rem;
+        background: white;
+        opacity: 0.9;
+    }
+    main {
+        position: relative;
+    }
+    .data {
+        position: absolute;
+        left: 30px;
+        top: 50px;
+    }
+    .weather {
+        position: absolute;
+        right: 30px;
+        bottom: 50px;
+    }
+    .data h2,.weather h2{
+        width: 80%;
+        background-color: teal;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        margin-bottom: 2rem;
+    }
+    .weather img {
+        display: none;
+    }
+  }

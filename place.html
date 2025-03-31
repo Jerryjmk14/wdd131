@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place</title>
+    <meta name="description" content="Infomation about the place I'll like to visit">
+    <meta name="author" content="Egwa Jeremiah">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Serengeti National Park</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hero-large-serengety.webp" media="(min-width: 740px)">
+            <img src="images/hero-small-seremgeti-park.webp" width="500" height="250" alt="serengeti national park">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <p><span>Area: </span>14,763 km²</p>
+            <p><span> Address: </span>Tanzania</p>
+            <p><span> Coordinates: </span>2°20′S 34°34′E / 2.333°S 34.567°E</p>
+            <p><span>Established: </span>1951</p>
+            <p><span>Management: </span>Tanzania National Parks Authority</p>
+            <p><span>Visitors: </span>350,000 per year</p>
+        </section>
+        <hr>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather_sandstorm_sun_icon.svg" alt="weather icon">
+            <p><span>Temperature: </span>10°C</p>
+            <p><span> Conditions: </span>Partly Cloudy</p>
+            <p><span> Wind: </span>5 km/h</p>
+            <p><span>Wind Chill: </span><span id="wind-chill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Egwa Jeremiah🌴 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
