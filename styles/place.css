@@ -1,11 +1,14 @@
 :root{
     --primary-color: teal;
+    --text-alignment: center;
+    
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 /* Mobile View(small) */
 header,footer {
@@ -28,7 +31,7 @@ section {
     height: auto;
 }
 header h1, main, footer {
-    text-align: center;
+    text-align: var(--text-alignment);
 }
 
 
