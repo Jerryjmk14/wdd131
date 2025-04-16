@@ -1,0 +1,100 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0;}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #2D032B;
+    color: white;
+    text-align: center;
+}
+header h1 {margin: 0;}
+
+/*----------- FORM STYLE --------------*/
+
+.review {
+    margin-top: 2rem;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.wf1 {
+    background-color: #D5CDD5;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.wf1 label {
+    display: block;
+    /* padding-top: 1rem; */
+    font-size: 0.9rem;
+}
+.wf1 input[type="radio"]{
+    display: inline;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"]
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+textarea {
+    height: 110px;
+    width: 100%;
+}
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-color: green;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
+    box-shadow: 1px 1px 4px #999;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #2D032B;
+    color: white;
+    padding: .5rem 2%;
+    text-align: center;
+}

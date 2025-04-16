@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Egwa Jeremiah">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+	<header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <label> Product Name
+                <select name="select-product" id="select-product" required>
+                    <option value="" disabled selected>Select a product...</option> 
+                </select>
+            </label>
+
+            <div>Overall Rating</div>
+                <label><input type="radio" id="one" name="rating" value="one" required>&star;</label>
+                <label><input type="radio" id="two" name="rating" value="two" required>&star;&star;</label>
+                <label><input type="radio" id="three" name="rating" value="three" required>&star;&star;&star;</label>
+                <label><input type="radio" id="four" name="rating" value="four" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" id="five" name="rating" value="five" required>&star;&star;&star;&star;&star;</label>
+
+                <label>Date of Installation<input type="date" id="installationDate" name="installationDate" required></label>
+
+            <div>Which features did you find usefull in the product?
+                <p>(Check all that apply)</p>
+            </div>
+                <label><input type="checkbox" id="durabilty" name="durabilty" value="durabilty">Durabilty</label>
+                <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="easeOfUse">Ease of use</label>
+                <label><input type="checkbox" id="performance" name="performance" value="performance">Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="design">Design</label>
+            <div>Written Review (Optional)</div>
+            <textarea name="writtenReview" id="writtenReview"></textarea>
+            <label>Your Name (Optional)<input type="text" id="fname" name="fname"></label>
+
+          <input type="submit" value="Post Review">
+        </form>
+   
+    </main>
+  
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Egwa Jeremiah🌴 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
